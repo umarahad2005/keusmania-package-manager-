@@ -3,7 +3,7 @@ import { ThemeContext } from '../App';
 import { AuthContext } from '../App';
 
 // Default static credentials (client-side only; for production replace with real auth)
-const DEFAULT_USER = 'Keusmani';
+const DEFAULT_USER = 'Keusmania';
 const DEFAULT_PASS = 'Keusm@ni@';
 
 const Login = () => {
@@ -50,9 +50,6 @@ const Login = () => {
         </div>
         {error && <div style={{background:'#ffe5e5', color:'#a40000', padding:'8px 10px', borderRadius:'8px', fontSize:'12px'}}>{error}</div>}
         <button type="submit" style={loginBtnStyle}>Login</button>
-        <div style={{marginTop:'4px', fontSize:'11px', textAlign:'center', opacity:.7}}>
-          Default: {DEFAULT_USER} / {DEFAULT_PASS}
-        </div>
       </form>
     </div>
   );
